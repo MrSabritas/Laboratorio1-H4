@@ -31,7 +31,11 @@ const ColorHarmonizer: React.FC = () => {
 
       <div 
         className="main-object-2d" 
-        style={{ backgroundColor: `hsl(${hue}, 70%, 50%)` }}
+        style={{ 
+          background: `linear-gradient(135deg, ${harmonies[0].val}, ${harmonies[2].val}, ${harmonies[1].val}, ${harmonies[3].val})`,
+          borderRadius: '30px',
+          boxShadow: `0 10px 25px rgba(0,0,0,0.3)`
+        }}
       />
 
       <div className="harmonies-grid">
